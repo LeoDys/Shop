@@ -33,7 +33,7 @@ public class ProductListByCidServlet extends HttpServlet {
 		request.setAttribute("pageBean", pageBean);
 		request.setAttribute("cid", cid);
 		
-		//定义一个记录历史商品信息的集合
+		//定义一个记录历史商品信息的集合start
 		List<Product> historyProductList = new ArrayList<Product>();
 		
 		//获得客户端携带名字叫pids的cookie
@@ -53,7 +53,7 @@ public class ProductListByCidServlet extends HttpServlet {
 		
 		//将历史记录的集合放到域中
 		request.setAttribute("historyProductList", historyProductList);
-		
+		// end
 		
 		request.getRequestDispatcher("/product_list.jsp").forward(request, response);
 		
