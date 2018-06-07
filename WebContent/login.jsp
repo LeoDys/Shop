@@ -85,7 +85,7 @@ font {
 						<div class="form-group">
 							<div class="col-sm-offset-2 col-sm-10">
 								<div class="checkbox">
-									<label> <input type="checkbox"> 自动登录
+									<label> <input type="checkbox" name="autoLogin" value="autoLogin"> 自动登录
 									</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label> <input
 										type="checkbox"> 记住用户名
 									</label>

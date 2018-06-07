@@ -19,10 +19,11 @@
 			</c:if>
 			<c:if test="${!empty user }">
 				<li style="color:red">欢迎您，${user.username }</li>
+				<li><a href="${pageContext.request.contextPath }/user?method=logout">退出</a></li>
 			</c:if>
 			
 			<li><a href="cart.jsp">购物车</a></li>
-			<li><a href="order_list.jsp">我的订单</a></li>
+			<li><a href="${pageContext.request.contextPath }/product?method=myOrders">我的订单</a></li>
 		</ol>
 	</div>
 </div>
